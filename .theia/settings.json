@@ -1,5 +1,4 @@
 {
     "python.pythonPath": "/usr/local/bin/python",
-    "python.dataScience.alwaysTrustNotebooks": true,
-    "python.dataScience.autoPreviewNotebooksInInteractivePane": true
+    "python.dataScience.alwaysTrustNotebooks": true
 }
