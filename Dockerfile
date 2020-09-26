@@ -1,5 +1,5 @@
-#FROM python:3.8-slim-buster
-FROM gitpod/workspace-full
+FROM python:3.8-slim-buster
+#FROM gitpod/workspace-full
 
 ENV PYTHONFAULTHANDLER=1 \
   PYTHONUNBUFFERED=1 \
