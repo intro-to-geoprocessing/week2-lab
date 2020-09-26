@@ -10,13 +10,13 @@ ENV PYTHONFAULTHANDLER=1 \
   POETRY_VERSION=1.0.10
 
 # System deps:
-RUN pip install "poetry==$POETRY_VERSION"
+# RUN pip install "poetry==$POETRY_VERSION"
 
 # Copy only requirements to cache them in docker layer
 WORKDIR /code
 COPY poetry.lock pyproject.toml /code/
 
-RUN poetry config virtualenvs.create false \
-  && poetry install --no-interaction --no-ansi
+# RUN poetry config virtualenvs.create false \
+#   && poetry install --no-interaction --no-ansi
 
 COPY . /code
