@@ -11,7 +11,9 @@ async-generator==1.10     # via nbclient
 attrs==20.2.0             # via jsonschema
 backcall==0.2.0           # via ipython
 bleach==3.2.1             # via nbconvert
+certifi==2020.6.20        # via matplotlib
 cffi==1.14.3              # via argon2-cffi
+cycler==0.10.0            # via matplotlib
 decorator==4.4.2          # via ipython
 defusedxml==0.6.0         # via nbconvert
 entrypoints==0.3          # via altair, nbconvert
@@ -27,34 +29,37 @@ jupyter-console==6.2.0    # via jupyter
 jupyter-core==4.6.3       # via jupyter-client, nbconvert, nbformat, notebook, qtconsole
 jupyter==1.0.0            # via -r requirements.in
 jupyterlab-pygments==0.1.1  # via nbconvert
+kiwisolver==1.2.0         # via matplotlib
 markupsafe==1.1.1         # via jinja2
+matplotlib==3.3.2         # via -r requirements.in
 mistune==0.8.4            # via nbconvert
 nbclient==0.5.0           # via nbconvert
 nbconvert==6.0.6          # via jupyter, notebook
 nbformat==5.0.7           # via ipywidgets, nbclient, nbconvert, notebook
 nest-asyncio==1.4.0       # via nbclient
 notebook==6.1.4           # via jupyter, widgetsnbextension
-numpy==1.19.2             # via altair, pandas
+numpy==1.19.2             # via altair, matplotlib, pandas
 packaging==20.4           # via bleach
 pandas==1.1.2             # via -r requirements.in, altair
 pandocfilters==1.4.2      # via nbconvert
 parso==0.7.1              # via jedi
 pexpect==4.8.0            # via ipython
 pickleshare==0.7.5        # via ipython
+pillow==7.2.0             # via matplotlib
 prometheus-client==0.8.0  # via notebook
 prompt-toolkit==3.0.7     # via ipython, jupyter-console
 ptyprocess==0.6.0         # via pexpect, terminado
 pycparser==2.20           # via cffi
 pygments==2.7.1           # via ipython, jupyter-console, jupyterlab-pygments, nbconvert, qtconsole
-pyparsing==2.4.7          # via packaging
+pyparsing==2.4.7          # via matplotlib, packaging
 pyrsistent==0.17.3        # via jsonschema
-python-dateutil==2.8.1    # via jupyter-client, pandas
+python-dateutil==2.8.1    # via jupyter-client, matplotlib, pandas
 pytz==2020.1              # via pandas
 pyzmq==19.0.2             # via jupyter-client, notebook, qtconsole
 qtconsole==4.7.7          # via jupyter
 qtpy==1.9.0               # via qtconsole
 send2trash==1.5.0         # via notebook
-six==1.15.0               # via argon2-cffi, bleach, jsonschema, packaging, python-dateutil
+six==1.15.0               # via argon2-cffi, bleach, cycler, jsonschema, packaging, python-dateutil
 terminado==0.9.1          # via notebook
 testpath==0.4.4           # via nbconvert
 toolz==0.11.1             # via altair
