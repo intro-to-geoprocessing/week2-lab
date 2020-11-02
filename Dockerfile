@@ -1,9 +1,13 @@
 FROM python:3.8-slim-buster
 
-# Copy only requirements to cache them in docker layer
 WORKDIR /code
 
-COPY . /code
-
 # System deps:
-RUN pip install -r requirements.txt
+RUN apt-get update && apt-get install -y libspatialindex-dev
+
+# Python deps:
+COPY requirements.txt /code
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy project files
+COPY . /code
